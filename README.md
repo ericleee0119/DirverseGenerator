@@ -32,11 +32,12 @@ The StyleGAN2 generates messy images(The left side), the StarGAN2 generates over
 
 ## Solution  
 We hope we can generate the image with some variety, and is not exist in the real-world, but can understand that is come from our training dataset, for example, a turtle's head combine with bee's body  
+
 I used WGAN-GP as our based model. WGAN-GP will generate the image that is almost same as the training dataset. Then I find the hidden feature in the latent space.  
-We use the blur detection and contrast detection to remove the image that is not clear enough until we get 2 clear image.
-We get images from the latent space between these 2 images, and do the blur detection and contrast detection again to remove blur images.
+We use the blur detection and contrast detection to remove the image that is not clear enough until we get 2 clear image.  
+We get images from the latent space between these 2 images, and do the blur detection and contrast detection again to remove blur images.  
 We do the similarity detection netween the image we just generated and the image in the training dataset to remove the image that is too similar to the training dataset  
-We tell the discriminator the image we expect, then the discriminator will tell the generator which kind of images it should generate
+We tell the discriminator the image we expect, then the discriminator will tell the generator which kind of images it should generate  
 After the traning, we can get the WGAN-GP model that will generate images that are full of variety  
 The below image shows the result. The left part is the training dataset, the middle part is the original result from the WGAN-GP that is too similar to the training dataset, the right part is our method's variety result
 ![result](https://user-images.githubusercontent.com/50438750/132113167-ffd2733d-7d07-4aca-85fb-b2d12edaad8b.PNG)  
