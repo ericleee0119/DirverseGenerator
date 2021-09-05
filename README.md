@@ -23,7 +23,7 @@ Technical Skills and tools:
 2. When the image is too less, GAN are difficult to generate images well  
 3. When images have too many categories, the GAN methods will generate confusing images  
 I give a example for the second and third points above  
-We use the animal drawing images as the training dataset, there are more than 30 categories  
+We use the animal drawing images as the training dataset(300 pics), there are more than 30 categories  
 Training dataset sample  
 ![sample](https://user-images.githubusercontent.com/50438750/132112835-78de5b36-ea06-4092-a854-ef942d3945a4.PNG)
 
