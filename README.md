@@ -24,5 +24,5 @@ Training dataset sample
 ![sample](https://user-images.githubusercontent.com/50438750/132112835-78de5b36-ea06-4092-a854-ef942d3945a4.PNG)
 
 The StyleGAN2 generates messy images(The left side), the StarGAN2 generates overlapped images(The right Side)  
-
+![image](https://github.com/ericleee0119/DirverseGenerator/blob/main/image/styleGAN2.PNG) ![image](https://github.com/ericleee0119/DirverseGenerator/blob/main/image/stargan2.PNG)
 
