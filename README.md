@@ -39,7 +39,7 @@ We use the blur detection and contrast detection to remove the image that is not
 
 We get images from the latent space between these 2 images, and do the blur detection and contrast detection again to remove blur images.  
 
-We do the similarity detection netween the image we just generated and the image in the training dataset to remove the image that is too similar to the training dataset  
+We do the similarity detection between the image we just generated and the image in the training dataset to remove the image that is too similar to the training dataset  
 
 We tell the discriminator the image we expect, then the discriminator will tell the generator which kind of images it should generate  
 
